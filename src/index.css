@@ -1,13 +1,62 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.fruit img{
+width: 200px;
+
+border: 2px solid hsl(0, 1%, 51%);
+box-shadow: 0,0%,0%,0.01;
+border-radius: 15px;
+}
+header{
+  width:100%;
+  height: 20%;
+  text-align: center;
+  margin-top: 20px;
+}
+nav ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px 50px;
+  list-style-type: none;
+
+}
+ li a{
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+}
+a:hover{
+  color: blue;
+  cursor: pointer;
+font-size:xx-large;
+text-decoration:underline;
+}
+li a:visited{
+  color: hsl(271, 45%, 47%);
+  text-decoration: none;
+}
+hr{
+
+box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; ;
+}
+main{
+  height: 70vh;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr;
+  margin: 20px 30px;
+}
+footer{
+margin-top:auto;
+text-align: center;
+
 }
